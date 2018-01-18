@@ -1,0 +1,45 @@
+body {
+    position: relative;
+ }
+
+div.col-sm-9 div {
+    height: 750px;
+    font-size: 25px;
+}
+
+p{
+	font-size: 20px;
+}
+
+div.col-sm-9 {
+    top: 70px;
+    float: right;
+    right: 150px;
+    width: 85%;
+}
+
+#section1 {color: #fff; background-color: #007a99;}
+#section2 {color: #fff; background-color: #008fb3;}
+#section3 {color: #fff; background-color: #00a3cc;}
+#section4 {color: #fff; background-color: #00b8e6;}
+#section5 {color: #fff; background-color: #00ccff;}
+#section6 {color: #fff; background-color: #1ad1ff;}
+#section7 {color: #fff; background-color: #33d6ff;}
+#section8 {color: #fff; background-color: #4ddbff;}
+#section9 {color: #fff; background-color: #1ad1ff;}
+#section10 {color: #fff; background-color: #00ccff;}
+#section11 {color: #fff; background-color: #00b8e6;}
+#section12 {color: #fff; background-color: #00a3cc;}
+#section13 {color: #fff; background-color: #008fb3;}
+#section14 {color: #fff; background-color: #007a99;}
+  
+@media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section4, #section5,
+    #section6, #section7, #section8, #section5, #section10,
+    #section11, #section12 {
+        margin-left: 150px;
+        width: 80%;
+    }
+}
+
+

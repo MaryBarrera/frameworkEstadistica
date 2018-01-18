@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estadistica </title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="icon" href="Recursos/iconoPicte.ico">
+  	<link rel="stylesheet" href="CSS/estilosPrincipal.css"> 	
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!-- BARRA DE NAVEGACION SUPERIO -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">  <!-- navar superior-->
+		<div class="container-fluid">
+			<div class="navbar-header">
+	     		<a class="navbar-brand" href="#"> Inicio </a>
+	  		</div>
+	  		<ul class="nav navbar-nav">
+		  		<li class="dropdown">
+		    		<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Datos Numericos <span class="caret"></span></a>
+			    	<ul class="dropdown-menu">
+		         	<li><a href="univariantes.html">Univariantes</a></li>
+		          	<li><a href="histogramas.html">Histogramas</a></li>
+		          	<li><a href="bivariantes.html">Bivariantes</a></li>
+		          	<li><a href="dicotomicos.html">Bivariantes Dicotómicos</a></li>
+		          	<li><a href="multivariantes.html">Multivariantes</a></li>
+		        	</ul>
+				</li>
+				<!--MENU Y SUBMENU GRAFICCACION COMPARADA-->
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Información <span class="caret"></span></a>
+				  	<ul class="dropdown-menu">
+			         <li><a href="x.html"> x </a></li>
+			      </ul>
+				</li>
+
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Ejemplos </a>
+				  	<ul class="dropdown-menu">
+			         <li><a href="x.html"> vv </a></li>
+			      </ul>
+				</li>
+
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="descargar.html"> Descargar </a>
+				</li>
+
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#" onclick="window.open('recursos/Ayuda_Picte_1_1.pdf')"> Ayuda </a>
+				</li>
+			</ul> <!--fin menu superior -->
+
+			<!-- Boton de buscar -->	
+			<form class="navbar-form navbar-right">
+			   <div class="form-group">
+			     	<input type="text" class="form-control" placeholder="Buscar">
+			   </div>
+			   <button type="submit" class="btn btn-default"> 
+			   	<i class="glyphicon glyphicon-search"><a href="www.google.com"></a></i>  <!--icono de boton -->
+			   </button>
+		   </form> 
+		</div>
+	</nav>
+
+	<!-- Boton titulo app -->
+	<div class="jumbotron">
+	  <div class="container text-center">
+	    	<h1 class="w3-xxxlarge w3-animate-bottom"><br>Framework de Cálculos Estadisticos</h1>
+	    	<h4>Existen 5 grupos diferentes en estadistica, seleccione uno para conocer más a detalle </h4>
+	  </div>
+	</div>
+
+	<!--Grupos de calculos-->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4" id="section1">
+				<div class="panel panel-default">
+	  			<!-- Default panel contents -->
+		  			<div class="panel-heading"><a href="univariantes.html"><h2> Univariantes </h2></a></div>
+			  		<!-- List group -->
+			  		<ul class="list-group">
+			  			<li class="list-group-item"> Desviación Estándar </li>
+			    		<li class="list-group-item"> Desviación Cuartil </li>
+						<li class="list-group-item"> Media Aritmética o Promedio </li>
+						<li class="list-group-item"> Media Geométrica </li>
+						<li class="list-group-item"> Media Ponderada </li>
+						<li class="list-group-item"> Mediana </li>
+						<li class="list-group-item"> Moda </li>
+						<li class="list-group-item"> Primer Cuartil</li>
+						<li class="list-group-item"> Rango </li>
+						<li class="list-group-item"> Rango Intercuartil </li>
+						<li class="list-group-item"> T - Student </li>
+						<li class="list-group-item"> Tercer Cuartil </li>
+						<li class="list-group-item"> Varianza Muestral </li>
+						<li class="list-group-item"> Varianza Poblacional </li>
+			 		</ul>
+				</div>
+   		</div>
+   
+   		<div class="col-sm-4" id="section2">
+				<div class="panel panel-default">
+			    <!-- Default panel contents -->
+					<div class="panel-heading"><a href="histogramas.html"><h2> Histogramas </h2></a></div>
+					<!-- List group -->
+					<ul class="list-group">
+						<li class="list-group-item"> Desviación Estándar  </a></li>
+					   <li class="list-group-item"> Desviación Cuartil </a></li>
+					   <li class="list-group-item"> Frecuencia Absoluta </a></li>
+					   <li class="list-group-item"> Frecuencia Acumulada </a></li>
+					   <li class="list-group-item"> Frecuencia Porcentual </a></li>
+					   <li class="list-group-item"> Frecuencia Porcentual Acumulada </a></li>
+					   <li class="list-group-item"> Frecuencia Relativa </a></li>
+					   <li class="list-group-item"> Limites de Clases </a></li>
+					   <li class="list-group-item"> Limites de Clases Reales</a></li>
+					   <li class="list-group-item"> Marcas de Clase</a></li>
+					   <li class="list-group-item"> Media Aritmetica o Promedio</a></li>					
+					</ul>		
+				</div>
+   		</div>
+
+   		<div class="col-sm-4" id="section3">
+				<div class="panel panel-default">
+	  			<!-- Default panel contents -->
+		  			<div class="panel-heading"><a href="bivariantes.html"><h2> Bivariantes </h2></a></div>
+			  		<!-- List group -->
+			  		<ul class="list-group">
+			  			<li class="list-group-item"> Media Ponderada </a></li>
+					   <li class="list-group-item"> Coeficiente relacional de Spearman o Rho </li>
+					   <li class="list-group-item"> Coeficiente Relacional de Person </li>  
+					   <li class="list-group-item"> Distribuición Chi Cuadrada o Ji Cuadrada </li>
+					   <li class="list-group-item"> Cálculo de Ajuste Lineal por Método de minimos cuadrados </li>
+					   <li class="list-group-item"> Cálculo de regresión multinomial por método de mínimos cuadrados </li>
+			  		</ul>
+				</div>
+   		</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" id="section4">
+				<div class="panel panel-default">
+	  			<!-- Default panel contents -->
+		  			<div class="panel-heading"><a href="dicotomicos.html"><h2> Bivariantes Dicotómicos </h2></a></div>
+			  		<!-- List group -->
+			  		<ul class="list-group">
+			  			<li class="list-group-item"> Coeficiente Relacional PHI o de Mathews</li>
+		   			<li class="list-group-item"> Coeficiente Odds Ratio </li>
+		   			<li class="list-group-item"> Coeficiente Riesgo Relativo</li>
+		   		</ul>
+		   	</div>
+		   </div>
+
+		   <div class="col-sm-6" id="section5">
+				<div class="panel panel-default">
+	  			<!-- Default panel contents -->
+		  			<div class="panel-heading"><a href="multivariantes.html"><h2> Multivariantes </h2></a></div>
+			  		<!-- List group -->
+			  		<ul class="list-group">
+			  			<li class="list-group-item"> Cálculo ANOVA o ADEVA unifactorial con muestras de igual tamaño.</li>
+						<li class="list-group-item"> Cálculo ANOVA o ADEVA bifactorial con muestras de igual tamaño.</li>
+						<li class="list-group-item"> Análisis de conglomerados o cluster optimizado con mayor similtud/menor distancia y datos originales. </li>
+						<li class="list-group-item"> Análisis de conglomerados o clusters optimizado con mayor similitud/menor distancia y datos estandarizados o normalizados.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+  	<footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    	<div class="w3-row-padding">
+      <div class="w3-col s4 w3-center">
+        	<h4>Dudas y/o Comentarios</h4>
+        	<form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Nombre" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Asunto" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Enviar</button>
+        	</form>
+      </div>
+
+      <div class="w3-col s4 w3-center">
+         <h4>Contacto</h4><br>
+        	<p><i class="fa fa-fw fa-map-marker"></i> UACM Cuautepec </p>
+        	<p><i class="fa fa-fw fa-phone"></i> 04455123123</p>
+        	<p><i class="fa fa-fw fa-envelope"></i> uacm@gmail.com</p>
+      </div>
+
+      <div class="w3-col s4 w3-center">
+			<h4>Redes Sociales</h4><br>
+			<a href="https://www.facebook.com/uacm.software/">
+				<i class="fa fa-facebook-official w3-hover-opacity w3-large"></i></a><br>
+        	<a href="https://www.instagram.com/"><i class="fa fa-instagram w3-hover-opacity w3-large"></i></a><br>
+        	<a href="https://www.twitter.com/"><i class="fa fa-twitter w3-hover-opacity w3-large"></i></a><br>
+        	<a href="https://www.linkedin.com/"><i class="fa fa-linkedin w3-hover-opacity w3-large"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24"> Copyrigth &#169; FrameworkEstadistico 2018 </div>
+</body>
+</html>

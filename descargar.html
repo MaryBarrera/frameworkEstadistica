@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<title>Descargas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="icon" href="Recursos/iconoPicte.ico"> 
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!-- BARRA DE NAVEGACION SUPERIO -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">  <!-- navar superior-->
+		<div class="container-fluid">
+			<div class="navbar-header">
+	     		<a class="navbar-brand" href="principal.html"> Inicio </a>
+	  		</div>
+	  		<ul class="nav navbar-nav">
+		  		<li class="dropdown">
+		    		<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Datos Numericos <span class="caret"></span></a>
+			    	<ul class="dropdown-menu">
+		         	<li><a href="univariantes.html">Univariantes</a></li>
+		          	<li><a href="histogramas.html">Histogramas</a></li>
+		          	<li><a href="bivariantes.html">Bivariantes</a></li>
+		          	<li><a href="dicotomicos.html">Bivariantes Dicotómicos</a></li>
+		          	<li><a href="multivariantes.html">Multivariantes</a></li>
+		        	</ul>
+				</li>
+				<!--MENU Y SUBMENU GRAFICCACION COMPARADA-->
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Información <span class="caret"></span></a>
+				  	<ul class="dropdown-menu">
+			         <li><a href="x.html"> x </a></li>
+			      </ul>
+				</li>
+
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Ejemplos </a>
+				  	<ul class="dropdown-menu">
+			         <li><a href="x.html"> vv </a></li>
+			      </ul>
+				</li>
+
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="descarga.html"> Descargar </a>
+				</li>
+
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#" onclick="window.open('recursos/Ayuda_Picte_1_1.pdf')"> Ayuda </a>
+				</li>
+			</ul> <!--fin menu superior -->
+
+			<!-- Boton de buscar -->	
+			<form class="navbar-form navbar-right">
+			   <div class="form-group">
+			     	<input type="text" class="form-control" placeholder="Buscar">
+			   </div>
+			   <button type="submit" class="btn btn-default"> 
+			   	<i class="glyphicon glyphicon-search"></i>  <!--icono de boton -->
+			   </button>
+		   </form> 
+		</div>
+	</nav>
+
+	<!-- Header -->
+	<header class="w3-container w3-theme w3-padding" id="myHeader">
+	 	<!-- Boton titulo app -->
+		<!--div class="jumbotron"-->
+			<div class="container text-center">
+				<h1><br> Descargas  </h1>
+				<p> Seleccione alguna librería .dll para su descarga</p>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="w3-container">
+		<hr>
+		<h2 class="w3-center">Librerías Disponibles </h2>
+		<div class="w3-border">
+			<div class="w3-bar w3-theme m2 w3-yellow">
+			  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openDll(event,'bidimensional')">Bidimensional</button>
+			  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openDll(event,'correlaciones')">Correlaciones</button>
+			  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openDll(event,'distribuciones')">Distribuciones</button>
+			  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openDll(event,'histogramas')">Histogramas</button>
+			  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openDll(event,'medDistribucion')">Medias de Dispersión</button>
+			  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openDll(event,'medTenCentral')">Medidas TenCentral</button>
+			  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openDll(event,'regresiones')">Regresiones</button>
+			  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openDll(event,'unidimensional')">Unidimensional</button>
+			</div>
+
+			<div id="bidimensional" class="w3-container city w3-animate-opacity">
+			  <h2>Bidimensional</h2>
+			  <div class="w3-card w3-container" style="min-height:460px">
+				  <h3>Clases que contiene esta librería: </h3><br>
+				  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:50px"></i>
+				  <p>Calcula Cluster Estandarizado <br>
+				  	Calcula Cluster <br>
+				  	Genera Vector <br>
+				  	Inversa <br>
+				  	Media de Arreglo <br>
+				  	Medias de Muestra <br>
+				  	Multiplica Bidimensinal <br>
+				  	Ordena Bidimensinalmente <br>
+				  	Suma Cuadrados de Errores <br>
+				  	Transpuesta Bidimensial <br>
+				  	Varianza de Arreglo <br></p>
+				  <button class="w3-button w3-green"><a href="Recursos\bidimensional.dll" download>Download</a></button>
+				</div>
+			</div>
+
+			<div id="correlaciones" class="w3-container city w3-animate-opacity">
+			  <h2>Correlaciones</h2>
+			   <div class="w3-card w3-container" style="min-height:460px">
+				  <h3>Clases que contiene esta librería:</h3><br>
+				  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:50px"></i>
+				  <p>Built-in responsiveness</p>	  
+				  <button class="w3-button w3-green"><a href="Recursos\correlaciones.dll" download>Download</a></button>
+				</div>
+			</div>
+
+			<div id="distribuciones" class="w3-container city w3-animate-opacity">
+			  <h2>Distribuciones</h2>
+			   <div class="w3-card w3-container" style="min-height:460px">
+				  <h3>Clases que contiene esta librería: </h3><br>
+				  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:50px"></i>
+				  <p>Standard CSS only</p>				  
+				  <button class="w3-button w3-green"><a href="Recursos\distribuciones.dll" download>Download</a></button>
+				</div>
+			</div>
+
+			<div id="histogramas" class="w3-container city w3-animate-opacity">
+			  <h2>Histogramas</h2>
+			   <div class="w3-card w3-container" style="min-height:460px">
+				  <h3>Clases que contiene esta librería: </h3><br>
+				  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:50px"></i>
+				  <p>Standard CSS only</p>			  
+				  <button class="w3-button w3-green"><a href="Recursos\histogramas.dll" download>Download</a></button>
+				</div>
+			</div>
+
+			<div id="medDistribucion" class="w3-container city w3-animate-opacity">
+			  <h2>Medidas de Distribución</h2>
+			   <div class="w3-card w3-container" style="min-height:460px">
+				  <h3>Clases que contiene esta librería: </h3><br>
+				  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:50px"></i>
+				  <p>Standard CSS only</p>				  
+				  <button class="w3-button w3-green"><a href="Recursos\medidasDispersion.dll" download>Download</a></button>
+				</div>
+			</div>
+
+			<div id="medTenCentral" class="w3-container city w3-animate-opacity">
+			  <h2>Medidas de Tendencia Central</h2>
+			   <div class="w3-card w3-container" style="min-height:460px">
+				  <h3>Clases que contiene esta librería: </h3><br>
+				  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:50px"></i>
+				  <p>Standard CSS only</p>
+				  <button class="w3-button w3-green"><a href="Recursos\medidasTenCen.dll" download>Download</a></button>
+				</div>
+			</div>
+
+			<div id="regresiones" class="w3-container city w3-animate-opacity">
+			  <h2>Regresiones</h2>
+			   <div class="w3-card w3-container" style="min-height:460px">
+				  <h3>Clases que contiene esta librería: </h3><br>
+				  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+				  <p>Standard CSS only</p>
+				  <button class="w3-button w3-green"><a href="Recursos\regresiones.dll" download>Download</a></button>
+				</div>
+			</div>
+
+			<div id="unidimensional" class="w3-container city w3-animate-opacity">
+			  <h2>Unidimensional </h2>
+			   <div class="w3-card w3-container" style="min-height:460px">
+				  <h3>Clases que contiene esta librería: </h3><br>
+				  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+				  <p>Standard CSS only</p>
+				  <button class="w3-button w3-green"><a href="Recursos\unidimensional.dll" download>Download</a></button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+	<script>
+	// Side navigation
+	function w3_open() {
+	    var x = document.getElementById("mySidebar");
+	    x.style.width = "100%";
+	    x.style.fontSize = "40px";
+	    x.style.paddingTop = "10%";
+	    x.style.display = "block";
+	}
+	function w3_close() {
+	    document.getElementById("mySidebar").style.display = "none";
+	}
+
+	// Tabs
+	function openDll(evt, cityName) {
+	  var i;
+	  var x = document.getElementsByClassName("city");
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";
+	  }
+	  var activebtn = document.getElementsByClassName("testbtn");
+	  for (i = 0; i < x.length; i++) {
+	      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+	  }
+	  document.getElementById(cityName).style.display = "block";
+	  evt.currentTarget.className += " w3-dark-grey";
+	}
+
+	var mybtn = document.getElementsByClassName("testbtn")[0];
+	mybtn.click();
+
+	// Slideshows
+	var slideIndex = 1;
+
+	function showDivs(n) {
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length} ;
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+
+	showDivs(1);
+
+	</script>
+
+
+</body>
+</html>
+

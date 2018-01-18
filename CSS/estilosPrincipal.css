@@ -1,0 +1,34 @@
+ #section1 li{
+ 	color: #fff;
+  	background-color: #1ad1ff;
+  	list-style: square inside;
+    margin-bottom: -11px;
+}
+ #section2 li {
+ 	color: #fff; 
+ 	background-color: #ff66a3;
+}
+ #section3 li{
+ 	color: #fff; 
+ 	background-color: #ff0000;
+    margin-bottom: 5px;
+ }
+ #section4 li{
+ 	color: #fff; 
+ 	background-color: #ff751a;
+ 	list-style: square inside;
+    margin-bottom: 10px;
+ }
+#section5 li {
+ 	color: #fff; 
+ 	background-color: #c653c6;
+ 	list-style: square inside;
+    margin-bottom: 0px;
+ }
+
+
+ @media screen and (max-width: 450px) {
+    #section1, #section2, #section3, #section4, #section5 {
+        margin-left: 50px;
+    }
+}

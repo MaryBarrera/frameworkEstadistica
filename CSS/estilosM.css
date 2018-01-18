@@ -1,0 +1,37 @@
+body {
+    position: relative;
+ }
+
+ul.sidebar-nav {
+  left: 5px;
+    top: 2px;
+    position: fixed;
+    width: 20%;
+}
+
+div.col-sm-9 div {
+    height: 750px;
+    font-size: 25px;
+}
+
+p{
+	font-size: 20px;
+}
+div.col-sm-9 {
+    top: 10px;
+    float: right;
+    right: 150px;
+    width: 85%;
+}
+
+  #section1 {color: #fff; background-color: #993399;}
+  #section2 {color: #fff; background-color: #c653c6;}
+  #section3 {color: #fff; background-color: #d279d2;}
+  #section4 {color: #fff; background-color: #d979d2;}
+  
+@media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section4 {
+        margin-left: 150px;
+        width: 80%;
+    }
+}

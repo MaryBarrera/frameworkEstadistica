@@ -1,0 +1,41 @@
+body {
+    position: relative;
+ }
+
+ul.sidebar-nav {
+    left: 5px;
+    top: 20px;
+    position: fixed;
+    width: 20%;
+}
+
+div.col-sm-9 div {
+    height: 750px;
+    font-size: 25px;
+}
+
+p{
+	font-size: 20px;
+}
+
+div.col-sm-9 {
+    top: -25px;
+    float: right;
+    right: 150px;
+    width: 85%;
+}
+
+  #section1 {color: #fff; background-color: #ffff00;}
+  #section2 {color: #fff; background-color: #ffff33;}
+  #section3 {color: #fff; background-color: #ffff80;}
+  #section4 {color: #fff; background-color: #ffff80;}
+  #section5 {color: #fff; background-color: #ffff33;}
+  #section6 {color: #fff; background-color: #ffff00;}
+  
+@media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section4, #section5,
+    #section6 {
+        margin-left: 150px;
+        width: 80%;
+    }
+}
