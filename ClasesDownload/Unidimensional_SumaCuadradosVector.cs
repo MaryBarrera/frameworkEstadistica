@@ -1,6 +1,7 @@
 public class sumaCuadradosVector_JW
-{//Abre la clase que cálcula la suma de los cuadrados del vector que recibe
-
+//ESPAÑOL: Abre la clase que cálcula la suma de los cuadrados del vector que recibe
+//ENGLISH: Open the class that calculate the sum of the   
+{
   public static double CalculaSumaCuadrados(int j, double[] Vtemp, int i,double MediaDeArregloUnid)
   {//Inicia método que cálcula la suma de los cuadrados del vector que recibe
 
@@ -8,12 +9,15 @@ public class sumaCuadradosVector_JW
     double diferencia = 0;//Declara e inicializa la variable provisional que almacenará la diferencia
     double acumulador = 0;//Declara e inicializa el acumulador de los valores del arreglo    
 
-    for(a=0;a<j;a++){//Inicia ciclo for de a que recorre el vector hasta j
-
+    //ESPAÑOL: Inicia ciclo for de a que recorre el vector hasta j
+    //ENGLISH: Start for loop from vector to j
+    for(a=0; a<j; a++){
       try
-      {//Abre try         
-        diferencia = Vtemp[a] - MediaDeArregloUnid;//Calcula la diferencia de la iteración entre el valor del vector y la media del arreglo
-      }//Cierra try  
+      {//Abre try - Open try       
+        //ESPAÑOL: Calcula la diferencia de la iteración entre el valor del vector y la media del arreglo
+        //ENGLISH: Calulate the diference between 
+        diferencia = Vtemp[a] - MediaDeArregloUnid;
+      }//Cierra try - Close try
 
       catch (System.IndexOutOfRangeException eA1)
       {//Inicia el catch para controlar excepción IndexOutOfRangeException

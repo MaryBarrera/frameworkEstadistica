@@ -22,7 +22,7 @@ public class polinomio_JW
       //ENGLISH: for loop from i to k that to go through lines
       for(i=0;i<k;i++) 
          if (i == 0)
-         {//Inicia if doble
+         {//Inicia if doble - Start twice if 
             //printf(" %+f ", b[i]);//Imprime término independiente
             if (b[i] == 0)
                sCadenaTemp = Convert.ToString(Math.Round(b[i], 4));
@@ -44,7 +44,9 @@ public class polinomio_JW
 
                sCadena3 = sCadena3 + sCadenaTemp; 
          }
-         sPolinomio = sCadena1 + sCadena2 + sCadena3 + sCadenaEnter;//Genera la cadena final del polinomio 
+         //ESPAÑOL: Genera la cadena final del polinomio
+         //ENGLISH: Generate the final polynomial string 
+         sPolinomio = sCadena1 + sCadena2 + sCadena3 + sCadenaEnter; 
          
          return sPolinomio;
    }
