@@ -24,11 +24,11 @@ div.col-sm-9 {
     width: 85%;
 }
 
-  #section1 {color: #fff; background-color: #993399;}
-  #section2 {color: #fff; background-color: #c653c6;}
-  #section3 {color: #fff; background-color: #d279d2;}
-  #section4 {color: #fff; background-color: #d979d2;}
-  
+  #section1 {color: #000; background-color: #ffffff;}
+  #section2 {color: #000; background-color: #ffffff;}
+  #section3 {color: #000; background-color: #ffffff;}
+  #section4 {color: #000; background-color: #ffffff;}
+
 @media screen and (max-width: 810px) {
     #section1, #section2, #section3, #section4 {
         margin-left: 150px;

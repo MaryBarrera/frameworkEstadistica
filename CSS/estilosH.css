@@ -2,7 +2,7 @@ body {
     position: relative;
  }
 
-ul.sidebar-nav { 
+ul.sidebar-nav {
     left: 0px;
     top: 10px;
     position: fixed;
@@ -79,7 +79,7 @@ p{
 
 .sidebar-nav li a:hover,
 .sidebar-nav li.active {
-  color: #fff;
+  color: #fffffff;
   background: rgba(255,255,255,0.2);
   text-decoration: none;
 }
@@ -123,18 +123,18 @@ div.col-sm-9 {
     width: 85%;
 }
 
-  #section1 {color: #fff; background-color: #ff0066;}
-  #section2 {color: #fff; background-color: #ff1a75;}
-  #section3 {color: #fff; background-color: #ff3385;}
-  #section4 {color: #fff; background-color: #ff4d94;}
-  #section5 {color: #fff; background-color: #ff66a3;}
-  #section6 {color: #fff; background-color: #ff80b3;}
-  #section7 {color: #fff; background-color: #ff66a3;}
-  #section8 {color: #fff; background-color: #ff4d94;}
-  #section9 {color: #fff; background-color: #ff3385;}
-  #section10 {color: #fff; background-color: #ff1a75;}
-  #section11 {color: #fff; background-color: #ff0066;}
-  
+  #section1 {color: #000; background-color: #ffffff;}
+  #section2 {color: #000; background-color: #ffffff;}
+  #section3 {color: #000; background-color: #ffffff;}
+  #section4 {color: #000; background-color: #ffffff;}
+  #section5 {color: #000; background-color: #ffffff;}
+  #section6 {color: #000; background-color: #ffffff;}
+  #section7 {color: #000; background-color: #ffffff;}
+  #section8 {color: #000; background-color: #ffffff;}
+  #section9 {color: #000; background-color: #ffffff;}
+  #section10 {color: #000; background-color: #ffffff;}
+  #section11 {color: #000; background-color: #ffffff}
+
 @media screen and (max-width: 810px) {
     #section1, #section2, #section3, #section4, #section5,
     #section6, #section7, #section8, #section5, #section10,
@@ -144,6 +144,3 @@ div.col-sm-9 {
     }
 
 }
-
-
-    
