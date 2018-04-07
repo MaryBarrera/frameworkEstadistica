@@ -25,10 +25,10 @@ div.col-sm-9 {
     width: 85%;
 }
 
-  #section1 {color: #fff; background-color: #e65c00;}
-  #section2 {color: #fff; background-color: #ff751a;}
-  #section3 {color: #fff; background-color: #ff944d;}
-  
+  #section1 {color: #000; background-color: #ffffff;}
+  #section2 {color: #000; background-color: #ffffff;}
+  #section3 {color: #000; background-color: #ffffff;}
+
 @media screen and (max-width: 810px) {
     #section1, #section2, #section3 {
         margin-left: 150px;

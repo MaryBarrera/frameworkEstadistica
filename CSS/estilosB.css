@@ -25,13 +25,13 @@ div.col-sm-9 {
     width: 85%;
 }
 
-  #section1 {color: #fff; background-color: #ffff00;}
-  #section2 {color: #fff; background-color: #ffff33;}
-  #section3 {color: #fff; background-color: #ffff80;}
-  #section4 {color: #fff; background-color: #ffff80;}
-  #section5 {color: #fff; background-color: #ffff33;}
-  #section6 {color: #fff; background-color: #ffff00;}
-  
+  #section1 {color: #000; background-color: #ffffff;}
+  #section2 {color: #000; background-color: #ffffff;}
+  #section3 {color: #000; background-color: #ffffff;}
+  #section4 {color: #000; background-color: #ffffff;}
+  #section5 {color: #000; background-color: #ffffff;}
+  #section6 {color: #000; background-color: #ffffff;}
+
 @media screen and (max-width: 810px) {
     #section1, #section2, #section3, #section4, #section5,
     #section6 {
