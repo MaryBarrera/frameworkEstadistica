@@ -3,6 +3,7 @@ using System;
 public class calculaClusters_JW
 {//Abre la clase que contiene a los métodos que cálculan diversos parámetros de los clusters
 
+  //ENGLISH: This method calculate the number of elements that will have the "Euclidean distance array" 
   public static int TamVDE(int n)
   {//Inicia método que cálcula la cantidad de elementos que habrá en el vector de distancias euclideas
     int tam;//Declara variable que almacenará resultado
@@ -11,28 +12,35 @@ public class calculaClusters_JW
   }//Termina método que cálcula la media de una matríz bidimensional
 
 
+  //ENGLISH: method that calculate the values of "Euclidean distance array"
   public static void calc_dist_euclideas(int n, int r,int tam_vde,double[,] Abid_estandar,double[] vec_dist_euclideas)
   {//Inicia método que cálcula los valores del vector de distancias euclideas      
     int i,j;//Subíndices de renglones y columnas
     int k;//Subíndice de multivariables en matríz de entrada
     int a = 0;//Subíndice del vector de distancias euclideas
 
+    //ENGLISH: Inicialize all the array with zeros
     for(i=0;i<tam_vde;i++)//Inicia ciclo for de i que recorre el vector hasta tam_vde
       vec_dist_euclideas[i] = 0; //Inicializa todo el vector en ceros  
 
+    //ENGLISH: nested for loop to calculate the summation 
     for(i=0;i<n;i++){//Inicia ciclo for de i que recorre el vector hasta n
       for(j=i+1;j<n;j++){//Inicia ciclo for de j que recorre el vector hasta n iniciando en i+1
         for(k=0;k<r;k++){//Inicia ciclo for de k=1 que recorre el vector hasta r
-          vec_dist_euclideas[a] = vec_dist_euclideas[a] + Math.Pow(Abid_estandar[i,k] - Abid_estandar[j,k],2);//Calcula la sumatoria de las diferencias al cuadrado para iniciar el cáclulo de la distancia euclidea entre dos puntos
+          //Calcula la sumatoria de las diferencias al cuadrado para iniciar el cáclulo de la distancia euclidea entre dos puntos
+          vec_dist_euclideas[a] = vec_dist_euclideas[a] + Math.Pow(Abid_estandar[i,k] - Abid_estandar[j,k],2);
         }//Termina ciclo for de k=1 que recorre el vector hasta r
         
-        vec_dist_euclideas[a] = Math.Sqrt( Math.Abs(vec_dist_euclideas[a]) );//Calcula la raiz cuadrada para concluir el cálculo de la distancia entre los dos puntos
+        //Calcula la raiz cuadrada para concluir el cálculo de la distancia entre los dos puntos
+        //Calculate the euclidean distance from square root 
+        vec_dist_euclideas[a] = Math.Sqrt( Math.Abs(vec_dist_euclideas[a]) );
         a++;//Incrementa en uno el valor del contador temporal a      
       }//Termina ciclo for de j                    
     }//Termina ciclo for de i
   }//Termina de método que cálcula los valores del vector de distancias euclideas
 
 
+  //ENGLISH: calculate the matrix of euclidean distance 
   public static void calc_mat_dist_euclideas(int n, int tam_vde, double[] vec_dist_euclideas,double[,] dMatDistEuclideas)
   {//Inicia método que cálcula los la matríz de distancias euclideas
 
