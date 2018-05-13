@@ -1,3 +1,5 @@
+//ENGLISH: this class content the quick sort method to sort two-dimensional matrix
+
 using System;
 
 public class ordenaBidimensional_JW

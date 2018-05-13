@@ -1,3 +1,5 @@
+using System;
+
 public class interpreta_JW
 {//Abre la clase que contiene a los métodos para interpretar los valores de las correlaciones
 

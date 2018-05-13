@@ -1,3 +1,5 @@
+using System;
+
 public class sumaCuadradosVector_JW
 //ESPAÑOL: Abre la clase que cálcula la suma de los cuadrados del vector que recibe
 //ENGLISH: Open the class that calculate the sum of the   

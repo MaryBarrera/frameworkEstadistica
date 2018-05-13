@@ -1,3 +1,10 @@
+//ENGLISH: Class with the methods to calculate pearson correlation coefficient 
+//this class needs the class media, varianza and desvacion_estandar
+//parameters: n: is an int value with the size of the vector or with the number of elements of array
+//temp: is a double array of size 2*n elements
+
+using System;
+
    public class pearson_JW
         {//Abre la clase que contiene a los métodos para cálculo del coeficiente relacional de Pearson
 

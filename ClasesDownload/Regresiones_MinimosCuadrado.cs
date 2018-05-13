@@ -1,46 +1,45 @@
+//ENGLISH: This method calculate the least squares
+
+using System;
+
 public class minimos_cuadrados_JW
 {//Inicia la clase minimos_cuadrados_JW
          
-
-         public static double sumatoria_arreglo_xy_frac(int n, double[,] bid_temp)
-         {//Inicia método que la sumatoria de x*y
-    
-            double acumulador=0; //declara variable de acumulador
-            int i; //Declara al subíndice local
+    public static double sumatoria_arreglo_xy_frac(int n, double[,] bid_temp)
+    {//Inicia método que la sumatoria de x*y    
+      double acumulador=0; //declara variable de acumulador
+      int i; //Declara al subíndice local
             
-             for(i=0;i<n;i++) //Ciclo for para acumular valores
-                 acumulador = acumulador + bid_temp[i, 0] * bid_temp[i, 1];//Acumulación de los productos xy del arreglo
+      for(i=0;i<n;i++) //Ciclo for para acumular valores
+        acumulador = acumulador + bid_temp[i, 0] * bid_temp[i, 1];//Acumulación de los productos xy del arreglo
          
-             return acumulador;//Devuelve valor acumulado de la sumatoria
-                                                  
-          }//Termina método que calcula la sumatoria de x*y
+      return acumulador;//Devuelve valor acumulado de la sumatoria                                            
+    }//Termina método que calcula la sumatoria de x*y
 
-         public static double sumatoria_vector_frac(int n, double[] unid_temp)
-         {//Inicia método que calcula la sumatoria del vector
+    public static double sumatoria_vector_frac(int n, double[] unid_temp)
+    {//Inicia método que calcula la sumatoria del vector
   
-         double acumulador=0; //declara variable de acumulador
-         int i; //Declara al subíndice local
+      double acumulador=0; //declara variable de acumulador
+      int i; //Declara al subíndice local
  
-             for(i=0;i<n;i++) //Ciclo for para acumular valores
-                 acumulador=acumulador + unid_temp[i];//Acumulación de valores del arreglo
+      for(i=0;i<n;i++) //Ciclo for para acumular valores
+        acumulador=acumulador + unid_temp[i];//Acumulación de valores del arreglo
      
-         return acumulador;//Devuelve valor acumulado de la sumatoria
+      return acumulador;//Devuelve valor acumulado de la sumatoria
+    }//Termina método que calcula la sumatoria del vector
 
-         }//Termina método que calcula la sumatoria del vector
 
-
-         public static double sumatoria_vector_cuadrado_frac(int n, double[] unid_temp)
-         {//Inicia método que calcula la sumatoria del vector al cuadrado
+    public static double sumatoria_vector_cuadrado_frac(int n, double[] unid_temp)
+    {//Inicia método que calcula la sumatoria del vector al cuadrado
  
-            double acumulador=0; //declara variable de acumulador
-            int i; //Declara al subíndice local
+      double acumulador=0; //declara variable de acumulador
+      int i; //Declara al subíndice local
     
-                for(i=0;i<n;i++) //Ciclo for para acumular valores
-                    acumulador = acumulador + Math.Pow(unid_temp[i], 2);//Acumulación de valores cuadráticos del arreglo
+      for(i=0;i<n;i++) //Ciclo for para acumular valores
+        acumulador = acumulador + Math.Pow(unid_temp[i], 2);//Acumulación de valores cuadráticos del arreglo
  
-             return acumulador;//Devuelve valor acumulado de la sumatoria
-
-         }//Termina método que calcula la sumatoria del vector al cuadrado
+        return acumulador;//Devuelve valor acumulado de la sumatoria
+    }//Termina método que calcula la sumatoria del vector al cuadrado
 
          public static double calc_mc_m(int n, double[,] bid_temp)
          {//Inicia método que calcula m
@@ -116,8 +115,8 @@ public class minimos_cuadrados_JW
 
 
 
-         public static string calc_errores_mc(int n, double[,] bid_temp, double m, double b)
-           {//Inicia método que calcula los errores del ajuste de mínimos cuadrados
+  public static string calc_errores_mc(int n, double[,] bid_temp, double m, double b)
+  {//Inicia método que calcula los errores del ajuste de mínimos cuadrados
 
                 string informe_error_mc = "";//Declara e inicializa cadena de reporte para método de mínimos cuadrados
                 string informe_error_parte_1 = "";//Declara e inicializa cadena de reporte para método de mínimos cuadrados
@@ -151,20 +150,19 @@ public class minimos_cuadrados_JW
 
                   for(i=0;i<n;i++){//for de i que recorre renglones hasta n
 
-                      valores_mc[i] = m * bid_temp[i, 0] + b;//Asigna valor a valores_mc[i]
-                      error_lineal_mc[i] = bid_temp[i, 1] - valores_mc[i];//Asigna valor a error_lineal_mc[i]
-                      acum_error_lineal += error_lineal_mc[i];//Acumula acum_error_lineal 
-                      error_cuadratico_mc[i] = Math.Pow(error_lineal_mc[i], 2);//Asigna valor a error_cuadratico_mc[i]
-                      acum_error_cuadratico += error_cuadratico_mc[i];//Acumula acum_error_cuadratico
-              
-                                   }//Cierra for de i
+                    valores_mc[i] = m * bid_temp[i, 0] + b;//Asigna valor a valores_mc[i]
+                    error_lineal_mc[i] = bid_temp[i, 1] - valores_mc[i];//Asigna valor a error_lineal_mc[i]
+                    acum_error_lineal += error_lineal_mc[i];//Acumula acum_error_lineal 
+                    error_cuadratico_mc[i] = Math.Pow(error_lineal_mc[i], 2);//Asigna valor a error_cuadratico_mc[i]
+                    acum_error_cuadratico += error_cuadratico_mc[i];//Acumula acum_error_cuadratico
+                  }//Cierra for de i
   
 
                   informe_error_parte_1 = "Impresión de errores lineales: \n";//Asigna cadena de reporte
            
                   for (i = 0; i < n; i++){//Inicia ciclo for de los renglones
                       informe_error_temp = informe_error_temp + Convert.ToString(String.Format("{0:0.00}", Math.Round(error_lineal_mc[i], 4))) + "\n";//Asigna cadena de reporte
-                                         }//Termina ciclo for de los renglones
+                  }//Termina ciclo for de los renglones
 
                   informe_error_parte_1 = informe_error_parte_1 + informe_error_temp;
                   informe_error_parte_2 = "\n" + "La suma de los errores lineales del modelo es " + Convert.ToString(String.Format("{0:0.0000}", Math.Round(acum_error_lineal, 4)));//Asigna cadena de reporte
@@ -173,7 +171,7 @@ public class minimos_cuadrados_JW
 
                    for (i = 0; i < n; i++){//Inicia ciclo for de los renglones
                        informe_error_temp = informe_error_temp + Convert.ToString(String.Format("{0:0.00}", Math.Round(error_cuadratico_mc[i], 4))) + "\n";//Asigna cadena de reporte 
-                                           }//Termina ciclo for de los renglones
+                    }//Termina ciclo for de los renglones
 
                   informe_error_parte_3 = informe_error_parte_3 + informe_error_temp;//Asigna cadena de reporte
                   informe_error_parte_4 = "La suma de los errores al cuadrado del modelo es SSE = " + Convert.ToString(String.Format("{0:0.0000}", Math.Round(acum_error_cuadratico, 4))) + " \n";//Asigna cadena de reporte
@@ -181,6 +179,5 @@ public class minimos_cuadrados_JW
                   
                   return informe_error_mc;//Devuelve la cadena con los valores calculados de acum_error_cuadratico
                                                                 
-           }//Termina método que calcula los errores del ajuste de mínimos cuadrados
-
-     }//Termina la clase minimos_cuadrados_JW
+  }//Termina método que calcula los errores del ajuste de mínimos cuadrados
+}//Termina la clase minimos_cuadrados_JW

@@ -1,3 +1,5 @@
+using System;
+
 public class multiplicaU_JW
 
 //ESPAÑOL: Abre la clase que multiplica un vector por otro vector

@@ -1,3 +1,5 @@
+using System;
+
         public class odds_ratio_JW
         {//Abre la clase que contiene a los métodos para calcular al coeficiente odds ratio
 

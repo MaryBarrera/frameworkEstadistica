@@ -1,3 +1,4 @@
+//ENGLISH: this class content the method that multiply two-dimensional arrays with one-dimensional arrays
 using System;
 
 public class multiplicaB_JW

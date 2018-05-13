@@ -1,5 +1,8 @@
+//ENGLISH: This class calculate inverse two-dimensional matrix 
+
 using System;
- public class inversa_JW
+
+public class inversa_JW
       {//Abre la clase que calcula la inversa de una matríz bidimensional y sus métodos auxiliares
 
           public static void calcInversa(int n, double[,] Mbid, double[,] Mbid_inversa)
