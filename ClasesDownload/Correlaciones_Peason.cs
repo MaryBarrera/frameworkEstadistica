@@ -1,15 +1,14 @@
-//ENGLISH: Class with the methods to calculate pearson correlation coefficient 
+//ENGLISH: Class with the methods to calculate pearson correlation coefficient
 //this class needs the class media, varianza and desvacion_estandar
 //parameters: n: is an int value with the size of the vector or with the number of elements of array
 //temp: is a double array of size 2*n elements
-
+//ESPAÑOL: la clase que contiene a los métodos para cálculo del coeficiente relacional de Pearson
 using System;
 
-   public class pearson_JW
-        {//Abre la clase que contiene a los métodos para cálculo del coeficiente relacional de Pearson
-
-            public static double calc_pearson(int n, double[,] temp)
-            {//Inicia método que calcula la correlación de Pearson
+public class pearson_JW
+{
+      public static double calc_pearson(int n, double[,] temp)
+      {//Inicia método que calcula la correlación de Pearson
                 double r; //declara variable del resultado
                 double x_media, y_media, desv_std_x, desv_std_y; //Declara variables a emplear para los cálculos
                 double varianza_x, varianza_y, producto, acum = 0; //Declara variables a emplear para los cálculos
@@ -24,7 +23,7 @@ using System;
 
                 for (i = 0; i < n; i++) //for de i que recorre renglones
                     for (j = 0; j < 2; j++) //for de j que recorre columnas
-                        if (j == 0)//if-else que separa 
+                        if (j == 0)//if-else que separa
                             vec_x[i] = temp[i, j];//Asignación de valores del vector x.
                         else//else del if doble
                             vec_y[i] = temp[i, j];//Asignación de valores del vector y.
@@ -58,6 +57,5 @@ using System;
 
                 return r;//Devuelve el valor calculado de r
 
-            }//Termina  método que calcula la correlación de Pearson
-
-        }//Cierra la clase que contiene a los métodos para cálculo del coeficiente relacional de Pearson
+      }//Termina  método que calcula la correlación de Pearson
+}//Cierra la clase que contiene a los métodos para cálculo del coeficiente relacional de Pearson
