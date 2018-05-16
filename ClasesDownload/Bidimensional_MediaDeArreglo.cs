@@ -1,9 +1,9 @@
 //ENGLISH: This method calculate the average of two-dimensional matrix
-
+//ESPAÑOL: la clase que contiene al método que cálcula la media de una matríz bidimensional
 using System;
 
 public class mediaDeArreglo_JW
-{//Abre la clase que contiene al método que cálcula la media de una matríz bidimensional
+{
   public static double calc_media_aritmetica_arreglo_bid(int i, int j,double[,] Atemp)
   {//Inicia método que cálcula la media de una matríz bidimensional
     int a,b; //subíndices de renglones y columnas

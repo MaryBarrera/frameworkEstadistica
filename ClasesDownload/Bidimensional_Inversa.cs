@@ -1,11 +1,11 @@
 //ENGLISH: This class calculate inverse two-dimensional matrix 
+//ESPAÑOL: la clase que calcula la inversa de una matríz bidimensional y sus métodos auxiliares
 
 using System;
 
 public class inversa_JW
-      {//Abre la clase que calcula la inversa de una matríz bidimensional y sus métodos auxiliares
-
-          public static void calcInversa(int n, double[,] Mbid, double[,] Mbid_inversa)
+{
+      public static void calcInversa(int n, double[,] Mbid, double[,] Mbid_inversa)
           {//Inicia el método que calcula la inversa de una matríz
               int i,j;//Declara subíndices locales
 
@@ -171,5 +171,4 @@ public class inversa_JW
                   Mbid[i,j]=arreglo_temporal[i,j];//Copia en Mbid[i][j] los valores de arreglo_temporal[i][j]
           }//Termina  método que guarda en arreglo_temporal los valores de Mbid
 
-
-      }//Cierra la clase que calcula la inversa de una matríz bidimensional y sus métodos auxiliares
+}//Cierra la clase que calcula la inversa de una matríz bidimensional y sus métodos auxiliares
