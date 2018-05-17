@@ -1,3 +1,10 @@
+///<summary>
+///ESPAÑOL: Contien el método que calcula la marca de clase
+///ENGLISH: Contains the method that calculates the class mark
+///</summary>
+
+using System;
+
 public class marcasClase_JW
 {//Inicia la clase marcasClase_JW
     public static void calc_marcas_clase(int iCantidadClases, double[,] dLimitesClases, double[] dMarcasClase)

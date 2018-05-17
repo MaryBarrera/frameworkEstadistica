@@ -1,5 +1,5 @@
 //ESPAÑOL: la clase cantidadClases_JW contiene el metodo que calcula la cantidad de clases para el histograma
-//ENGLISH: this method claculates
+//ENGLISH: this method claculates the number of classes that a histogram will have
 
 using System;
 

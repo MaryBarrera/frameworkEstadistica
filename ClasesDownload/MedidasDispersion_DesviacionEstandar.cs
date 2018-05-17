@@ -1,4 +1,11 @@
-public class desviacion_estandar_JW//Abre la clase que calcula la desviación estándar
+///<summary>
+///ESPAÑOL: la clase calcula la desviación estándar
+///ENGLISH: the class calculates the standard deviation
+///</summary>
+
+using System;
+
+public class desviacion_estandar_JW//Abre
 {
     public static double calc_desviacion_estandar(double varianza)//El método recibe un arreglo de double's y devuelve un solo valor double
     {//Inicia método
@@ -12,6 +19,6 @@ public class desviacion_estandar_JW//Abre la clase que calcula la desviación es
     {//Inicia método
         int i; //Subíndice local
         for(i=0;i<k;i++)//Inicia ciclo for de i que recorre el vector hasta k
-        vec_desviaciones_std_cavec_varianzas_ca[i] = Math.Sqrt(vec_varianzas_ca[i]);//Calcula la desviación estándar de cada varianza                                                                                                         
+        vec_desviaciones_std_cavec_varianzas_ca[i] = Math.Sqrt(vec_varianzas_ca[i]);//Calcula la desviación estándar de cada varianza
     }//Fin de método
 }//Cierra la clase que calcula la desviación estándar
