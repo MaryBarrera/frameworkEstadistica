@@ -1,5 +1,5 @@
-//ESPAÑOL: la clase que calcula la t de student 
-//ENGLISH: 
+//ESPAÑOL: la clase que calcula la t de student
+//ENGLISH: this class calculate student t test
 
 using System;
 

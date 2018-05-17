@@ -1,5 +1,5 @@
 //ESPAÑOL: la clase que calcula el factorial
-//ENGLISH: this class 
+//ENGLISH: this class calculate the factorial of double value
 
 using System;
 
@@ -7,10 +7,10 @@ public class factorial_JW
 {
     public static double calc_factorial(double dfactorial)//El método recibe un arreglo de double's y devuelve un solo valor double
     {//Inicia método que calcula el factorial
-           
+
         double total = 1;//Declara la variable que almacenará resultado
         int i;//Declara la variable del ciclo for
-            
+
         try
         {//Abre try
 
@@ -21,7 +21,7 @@ public class factorial_JW
 
             if (dfactorial == 1)//Verifica si se ingreso el valor de 1
                 return 1;//Devuelve el valor de factorial igual a 1
-          
+
             if (dfactorial > 34)
             {//if simple con corrección de información en caso de exceder 34
                 dfactorial = 34;  //de que se ingrese un cero al programa
@@ -36,13 +36,13 @@ public class factorial_JW
                 total = (double)Math.Abs(total * i);
             }
         }//Cierra try
-                
+
         catch (Exception excepcion)
         {//Abre catch
             Console.WriteLine("Informe de error: \n" + excepcion.Message);
             throw;
         }//Cierra catch
 
-        return total;//Devuelve valor factorial calculado recursivamente 
+        return total;//Devuelve valor factorial calculado recursivamente
     }//Termina método que calcula el factorial
 }//Termina la clase que calcula el factorial
