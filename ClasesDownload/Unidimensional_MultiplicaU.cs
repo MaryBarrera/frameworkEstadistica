@@ -1,9 +1,9 @@
+//ESPAÑOL: Abre la clase que multiplica un vector por otro vector
+//ENGLISH: Open the class that multiplies a vector by another vector
+
 using System;
 
 public class multiplicaU_JW
-
-//ESPAÑOL: Abre la clase que multiplica un vector por otro vector
-//ENGLISH: Open the class that multiplies a vector by another vector
 {
     public static double VectorPorVector(int a, double[] Vuni_1, double[] Vuni_2)
     //ESPAÑOL: Inicia método que multiplica un vector por otro vector

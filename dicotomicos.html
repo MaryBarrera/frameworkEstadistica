@@ -42,30 +42,19 @@
 				</li>
 
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Ejemplos </a>
-				  	<ul class="dropdown-menu">
-			         <li><a href="x.html"> vv </a></li>
-			      </ul>
-				</li>
-				
-				<li class="dropdown">
 					<a href="descargar.html"> Descargar </a>
-				</li>
-
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#" onclick="window.open('recursos/Ayuda_Picte_1_1.pdf')"> Ayuda </a>
 				</li>
 			</ul> <!--fin menu superior -->
 
-			<!-- Boton de buscar -->	
+			<!-- Boton de buscar -->
 			<form class="navbar-form navbar-right">
 			   <div class="form-group">
 			     	<input type="text" class="form-control" placeholder="Buscar">
 			   </div>
-			   <button type="submit" class="btn btn-default"> 
+			   <button type="submit" class="btn btn-default">
 			   	<i class="glyphicon glyphicon-search"></i>  <!--icono de boton -->
 			   </button>
-		   </form> 
+		   </form>
 		</div>
 	</nav>
 
@@ -84,8 +73,8 @@
 		   <a href="#section2" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Coeficiente Odds Ratio</a>
 		   <a href="#section3" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Coeficiente Riesgo Relativo </a>
 	  	</div>
-	</nav>	
-		      
+	</nav>
+
 	<!-- Overlay effect when opening sidebar on small screens -->
 	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
@@ -101,27 +90,27 @@
 
 		<!--Secciones-->
 		<!--div class="col-sm-9" class="page-content inset" data-spy="scroll" data-target="#spy"-->
-		   <div id="section1" class="col-md-12 well">    
+		   <div id="section1" class="col-md-12 well">
 			   <legend><h1> Coeficiente Relacional PHI o de Mathews</h1></legend>
 			   <img src="FichasTecnicas/DcoeficientePhi.png" class="img-rounded" >
-			   <p>Descargar el código en C# de la clase  
+			   <p>Descargar el código en C# de la clase
 				<button type="button" class="btn btn-success"><a href="ClasesDownload\Correlaciones_PhiMathews.cs" download> phi_Mathews_JW </a></button> y usuar el método "calc_phi_Mathews". </p>
-				<p> Más info. en <a href="https://es.khanacademy.org/math/probability/data-distributions-a1/summarizing-spread-distributions/a/calculating-standard-deviation-step-by-step">Khanacademy </a>			
+				<p> Más info. en <a href="https://es.khanacademy.org/math/probability/data-distributions-a1/summarizing-spread-distributions/a/calculating-standard-deviation-step-by-step">Khanacademy </a>
 			</div>
 
-			<div id="section2" class="col-md-12 well"> 
+			<div id="section2" class="col-md-12 well">
 			   <legend><h1> Coeficiente Odds Ratio</h1></legend>
 			   <img src="FichasTecnicas/DcoeficienteOdds.png" class="img-rounded" >
-			   <p>Para este calculo es necesario descagar la clase  
+			   <p>Para este calculo es necesario descagar la clase
 			   <button type="button" class="btn btn-success"><a href="ClasesDownload\Correlaciones_OddsRatio.cs" download> odds_ratio_JW </a></button> y usar el método "calc_odds_ratio". </p>
-			</div> 
+			</div>
 
-	  		<div id="section3" class="col-md-12 well"> 
+	  		<div id="section3" class="col-md-12 well">
 			   <legend><h1> Coeficiente Riesgo Relativo </h1></legend>
 			   <img src="FichasTecnicas/DcoeficienteRR.png" class="img-rounded" >
-			   <p>Para este calculo es necesario descagar la clase  
+			   <p>Para este calculo es necesario descagar la clase
 			   <button type="button" class="btn btn-success"><a href="ClasesDownload\Correlaciones_RiesgoRelativo.cs" download> riesgo_relativo_JW </a></button> y usar el método "calc_riesgo_relativo". </p>
-			</div> 
+			</div>
 		</div>
 
 	</div> <!--page content-->
@@ -131,11 +120,11 @@
 	    document.getElementById("mySidebar").style.display = "block";
 	    document.getElementById("myOverlay").style.display = "block";
 	}
-	 
+
 	function w3_close() {
 	    document.getElementById("mySidebar").style.display = "none";
 	    document.getElementById("myOverlay").style.display = "none";
 	}
-	</script>	 
+	</script>
 </body>
 </html>
