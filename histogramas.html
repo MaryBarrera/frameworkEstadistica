@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>Histogramas </title>
@@ -16,47 +16,6 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<!-- BARRA DE NAVEGACION SUPERIO -->
-	<nav class="navbar navbar-inverse navbar-fixed-top">  <!-- navar superior-->
-		<div class="container-fluid">
-			<div class="navbar-header">
-	     		<a class="navbar-brand" href="index.html"> Inicio </a>
-	  		</div>
-	  		<ul class="nav navbar-nav">
-		  		<li class="dropdown">
-		    		<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Datos Numericos <span class="caret"></span></a>
-			    	<ul class="dropdown-menu">
-		         	<li><a href="univariantes.html">Univariantes</a></li>
-		          	<li><a href="histogramas.html">Histogramas</a></li>
-		          	<li><a href="bivariantes.html">Bivariantes</a></li>
-		          	<li><a href="dicotomicos.html">Bivariantes Dicotómicos</a></li>
-		          	<li><a href="multivariantes.html">Multivariantes</a></li>
-		        	</ul>
-				</li>
-				<!--MENU Y SUBMENU GRAFICCACION COMPARADA-->
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Documentación <span class="caret"></span></a>
-				  	<ul class="dropdown-menu">
-			         <li><a href="html-docs/index.html"> Diagramas de Clases </a></li>
-			      </ul>
-				</li>
-
-				<li class="dropdown">
-					<a href="descargar.html"> Descargar </a>
-				</li>
-			</ul> <!--fin menu superior -->
-
-			<!-- Boton de buscar -->
-			<form class="navbar-form navbar-right">
-			   <div class="form-group">
-			     	<input type="text" class="form-control" placeholder="Buscar">
-			   </div>
-			   <button type="submit" class="btn btn-default">
-			   	<i class="glyphicon glyphicon-search"></i>  <!--icono de boton -->
-			   </button>
-		   </form>
-		</div>
-	</nav>
 
 	<!-- Sidebar/menu -->
 	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
@@ -64,21 +23,22 @@
 		   <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
 		      <i class="fa fa-remove"></i>
 		   </a>
+           <button type="button" class="btn btn-light"><a href="Inicio.aspx">Home </a></button>
 		   <img src="Recursos/histo.png" style="width:45%;" class="w3-round"><br><br>
 		   <h4><b>MENÚ</b></h4>
 	  	</div>
 	  	<div class="w3-bar-block">
-			<a href="#section1" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Desviación Estándar</a>
-		   <a href="#section2" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Desviación Cuartil</a>
-		   <a href="#section3" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Frecuencia Absoluta </a>
-		   <a href="#section4" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Frecuencia Acumulada </a>
-		   <a href="#section5" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Frecuencia Porcentual </a>
-		   <a href="#section6" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Frecuencia Porcentual Acumulada </a>
-		   <a href="#section7" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Frecuencia Relativa</a>
-		   <a href="#section8" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Limites de Clases</a>
-		   <a href="#section9" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Limites de Clases Reales </a>
-		   <a href="#section10" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Marcas de Clase </a>
-		   <a href="#section11" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Media Aritmetica o Promedio</a>
+			<a href="#section1" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o w3-margin-right"></i> Desviación Estándar</a>
+		   <a href="#section2" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o w3-margin-right"></i> Desviación Cuartil</a>
+		   <a href="#section3" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o w3-margin-right"></i> Frecuencia Absoluta </a>
+		   <a href="#section4" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o w3-margin-right"></i> Frecuencia Acumulada </a>
+		   <a href="#section5" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o w3-margin-right"></i> Frecuencia Porcentual </a>
+		   <a href="#section6" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o w3-margin-right"></i> Frecuencia Porcentual Acumulada </a>
+		   <a href="#section7" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o w3-margin-right"></i> Frecuencia Relativa</a>
+		   <a href="#section8" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o w3-margin-right"></i> Limites de Clases</a>
+		   <a href="#section9" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o w3-margin-right"></i> Limites de Clases Reales </a>
+		   <a href="#section10" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o w3-margin-right"></i> Marcas de Clase </a>
+		   <a href="#section11" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o w3-margin-right"></i> Media Aritmetica o Promedio</a>
 		</div>
 	</nav>
 
@@ -164,7 +124,8 @@
 
  		<div id="section10" class="col-md-12 well">
 			<legend><h1>Marcas de Clase</h1></legend>
-			<img src="FichasTecnicas/HmarcaClases.png" class="img-rounded"> <br><br>
+			<img src="FichasTecnicas/HmarcaClases.png" class="img-rounded"> 
+			<img src="FichasTecnicas/HmarcaClases2.png" class="img-rounded"> <br><br>
 			<p>Para este calculo es necesario descagar la clase
 			<button type="button" class="btn btn-success"><a href="ClasesDownload\Histogramas_MarcasClase.cs" download> marcasClase_JW </a></button>
 			<p>Además puedes descargar las clases

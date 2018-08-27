@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>Bivariantes </title>
@@ -15,64 +15,24 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<!-- BARRA DE NAVEGACION SUPERIO -->
-	<nav class="navbar navbar-inverse navbar-fixed-top">  <!-- navar superior-->
-		<div class="container-fluid">
-			<div class="navbar-header">
-	     		<a class="navbar-brand" href="index.html"> Inicio </a>
-	  		</div>
-	  		<ul class="nav navbar-nav">
-		  		<li class="dropdown">
-		    		<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Datos Numericos <span class="caret"></span></a>
-			    	<ul class="dropdown-menu">
-		         	<li><a href="univariantes.html">Univariantes</a></li>
-		          	<li><a href="histogramas.html">Histogramas</a></li>
-		          	<li><a href="bivariantes.html">Bivariantes</a></li>
-		          	<li><a href="dicotomicos.html">Bivariantes Dicotómicos</a></li>
-		          	<li><a href="multivariantes.html">Multivariantes</a></li>
-		        	</ul>
-				</li>
-				<!--MENU Y SUBMENU GRAFICCACION COMPARADA-->
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Documentación <span class="caret"></span></a>
-				  	<ul class="dropdown-menu">
-			         <li><a href="html-docs/index.html"> Diagramas de Clases </a></li>
-			      </ul>
-				</li>
-
-				<li class="dropdown">
-					<a href="descargar.html"> Descargar </a>
-				</li>
-			</ul> <!--fin menu superior -->
-
-			<!-- Boton de buscar -->
-			<form class="navbar-form navbar-right">
-			   <div class="form-group">
-			     	<input type="text" class="form-control" placeholder="Buscar">
-			   </div>
-			   <button type="submit" class="btn btn-default">
-			   	<i class="glyphicon glyphicon-search"></i>  <!--icono de boton -->
-			   </button>
-		   </form>
-		</div>
-	</nav>
-
+	
 	<!-- Sidebar/menu -->
 	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
 	  <div class="w3-container">
 	    	<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
 	      	<i class="fa fa-remove"></i>
 	    	</a>
-	    	<img src="Recursos/Multi2.png" style="width:45%;" class="w3-round"><br><br>
+            <button type="button" class="btn btn-light"><a href="Inicio.aspx">Home </a></button>
+	    	<img src="Recursos/bivariante.png" style="width:45%;" class="w3-round"><br><br>
 	    	<h4><b>MENÚ</b></h4>
 	  	</div>
 	  	<div class="w3-bar-block">
-			<a href="#section1" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Media Ponderada</a>
-		   <a href="#section2" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Coeficiente relacional de Spearman o Rho</a>
-		   <a href="#section3" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Coeficiente Relacional de Person </a>
-		   <a href="#section4" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Distribuición Chi Cuadrada o Ji Cuadrada </a>
-		   <a href="#section5" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Cálculo de Ajuste Lineal por Método de minimos cuadrados </a>
-		   <a href="#section6" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i> Cálculo de regresión multinomial por método de mínimos cuadrados </a>
+			<a href="#section1" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o fa-fw w3-margin-right"></i>Media Ponderada</a>
+		   <a href="#section2" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o fa-fw w3-margin-right"></i>Coeficiente relacional de Spearman o Rho</a>
+		   <a href="#section3" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o fa-fw w3-margin-right"></i>Coeficiente Relacional de Person </a>
+		   <a href="#section4" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o fa-fw w3-margin-right"></i>Distribuición Chi Cuadrada o Ji Cuadrada </a>
+		   <a href="#section5" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o fa-fw w3-margin-right"></i>Cálculo de Ajuste Lineal por Método de minimos cuadrados </a>
+		   <a href="#section6" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-star-o fa-fw w3-margin-right"></i>Cálculo de regresión multinomial por método de mínimos cuadrados </a>
 	  	</div>
 	</nav>
 
@@ -102,6 +62,7 @@
 	   <div id="section2" class="col-md-12 well">
 	      <legend><h1>Coeficiente relacional de Spearman o Rho</h1></legend>
 	      <img src="FichasTecnicas/BcoeficienteRho.png" class="img-rounded" >
+	      <img src="FichasTecnicas/BcoeficienteRho2.png" class="img-rounded" >
 	      <p>Para este calculo es necesario descagar la clase
 	      <button type="button" class="btn btn-success"><a href="ClasesDownload\Correlaciones_SpearmanRho.cs" download> spearman_rho_JW </a> </button> y usuar el método "calc_spearman_rho". </p>
 	   </div>
@@ -116,6 +77,8 @@
 	   <div id="section4" class="col-md-12 well">
 	      <legend><h1> Distribuición Chi Cuadrada o Ji Cuadrada</h1></legend>
 	      <img src="FichasTecnicas/BchiCuadrada.png" class="img-rounded" >
+	      <img src="FichasTecnicas/BchiCuadrada2.png" class="img-rounded" >
+	      <img src="FichasTecnicas/BchiCuadrada3.png" class="img-rounded" >
 	      <p>Para este calculo es necesario descagar la clase
 	      <button type="button" class="btn btn-success"><a href="ClasesDownload\Distribuciones_ChiCuadrada.cs" download> chi_cuadrada_JW </a></button> usar el método "calc_chi_cuadrada" </p>
 	   </div>
@@ -123,6 +86,8 @@
 	   <div id="section5" class="col-md-12 well">
 	      <legend><h1> Cálculo de Ajuste Lineal por Método de minimos cuadrados</h1></legend>
 	      <img src="FichasTecnicas/BajusteLineal.png" class="img-rounded" >
+	      <img src="FichasTecnicas/BajusteLineal2.png" class="img-rounded" >
+	      <img src="FichasTecnicas/BajusteLineal3.png" class="img-rounded" >
 	      <p>Para este calculo es necesario descagar la clase
 	      <button type="button" class="btn btn-success"><a href="ClasesDownload\Regresiones_MinimosCuadrado.cs" download> minimos_cuadrados_JW </a></button> </p>
 	   </div>
@@ -130,6 +95,7 @@
 	   <div id="section6" class="col-md-12 well">
 	      <legend><h1>Cálculo de regresión multinomial por método de mínimos cuadrados </h1></legend>
 	      <img src="FichasTecnicas/BregresionMulti.png" class="img-rounded" >
+	      <img src="FichasTecnicas/BregresionMulti2.png" class="img-rounded" >
 	      <p>Para este calculo es necesario descagar la clase  </p>
 	      <button type="button" class="btn btn-success"><a href="ClasesDownload\Regresiones_MinimosCuadrado.cs" download> minimos_cuadrados_JW </a></button>
 	   </div>
