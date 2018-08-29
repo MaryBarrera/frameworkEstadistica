@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   	<link rel="stylesheet" href="CSS/estilosB.css">
@@ -16,13 +15,54 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 	
+	<!-- BARRA DE NAVEGACION SUPERIO -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">  <!-- navar superior-->
+		<div class="container-fluid">
+			<div class="navbar-header">
+	     		<a class="navbar-brand" href="index.html"> Inicio </a>
+	  		</div>
+	  		<ul class="nav navbar-nav">
+		  		<li class="dropdown">
+		    		<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Datos Numericos <span class="caret"></span></a>
+			    	<ul class="dropdown-menu">
+		         	<li><a href="univariantes.html">Univariantes</a></li>
+		          	<li><a href="histogramas.html">Histogramas</a></li>
+		          	<li><a href="bivariantes.html">Bivariantes</a></li>
+		          	<li><a href="dicotomicos.html">Bivariantes Dicotómicos</a></li>
+		          	<li><a href="multivariantes.html">Multivariantes</a></li>
+		        	</ul>
+				</li>
+				<!--MENU Y SUBMENU GRAFICCACION COMPARADA-->
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Documentación <span class="caret"></span></a>
+				  	<ul class="dropdown-menu">
+			         <li><a href="html-docs/index.html"> Diagramas de Clases </a></li>
+			      </ul>
+				</li>
+
+				<li class="dropdown">
+					<a href="descargar.html"> Descargar </a>
+				</li>
+			</ul> <!--fin menu superior -->
+
+			<!-- Boton de buscar -->
+			<form class="navbar-form navbar-right">
+			   <div class="form-group">
+			     	<input type="text" class="form-control" placeholder="Buscar">
+			   </div>
+			   <button type="submit" class="btn btn-default">
+			   	<i class="glyphicon glyphicon-search"><a href="www.google.com"></a></i>  <!--icono de boton -->
+			   </button>
+		   </form>
+		</div>
+	</nav>
+
 	<!-- Sidebar/menu -->
 	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
 	  <div class="w3-container">
 	    	<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
 	      	<i class="fa fa-remove"></i>
-	    	</a>
-            <button type="button" class="btn btn-light"><a href="Inicio.aspx">Home </a></button>
+	    	</a><br>
 	    	<img src="Recursos/bivariante.png" style="width:45%;" class="w3-round"><br><br>
 	    	<h4><b>MENÚ</b></h4>
 	  	</div>
