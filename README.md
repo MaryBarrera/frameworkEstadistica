@@ -1,5 +1,5 @@
 # frameworkEstadistica
-Módulos y Clases en C# para cálculos estadísticos https://marybarrera.github.io/frameworkEstadistica/
+Módulos y Clases en C# para cálculos estadísticos 
 
 # GITHUB PAGES
 https://maribel-barrera.github.io/frameworkEstadistica/
